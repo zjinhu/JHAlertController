@@ -1,7 +1,7 @@
  
 Pod::Spec.new do |s|
   s.name             = 'JHAlertController'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '封装系统UIAlertController，链式编程，一行代码弹窗.'
  
   s.description      = <<-DESC

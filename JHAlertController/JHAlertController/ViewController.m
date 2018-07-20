@@ -28,12 +28,12 @@
             
             alertMaker.addAttributedAction(@"333",[UIColor greenColor]);
             alertMaker.addDestructiveAction(@"444");
-//            alertMaker.addCancelAction(@"555");
-//            alertMaker.addDefaultAction(@"666");
-//            
-//            [alertMaker addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-//                textField.placeholder = @"输入框-请输入";
-//            }];
+            alertMaker.addCancelAction(@"555");
+            alertMaker.addDefaultAction(@"666");
+            
+            [alertMaker addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+                textField.placeholder = @"输入框-请输入";
+            }];
         } actionsBlock:^(NSInteger buttonIndex, UIAlertAction *action, JHAlertController *alertSelf) {
             NSLog(@"%i--------%@",buttonIndex,action.title);
         }];

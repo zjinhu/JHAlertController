@@ -43,6 +43,13 @@ typedef void(^JHAlertAppearanceProcess)(JHAlertController *alertMaker);
 typedef void (^JHAlertActionBlock)(NSInteger buttonIndex, UIAlertAction *action, JHAlertController *alertSelf);
 
 @interface JHAlertController : UIAlertController
+
+@property (nonatomic,strong) UIColor *titleColor; /**< 标题的颜色 */
+@property (nonatomic,strong) UIColor *messageColor; /**< 信息的颜色 */
+
+@property (nonatomic,strong) UIFont *titleFont; /**< 标题的字体 */
+@property (nonatomic,strong) UIFont *messageFont; /**< 信息的字体 */
+
 /**
  JHAlertController: 禁用alert弹出动画，默认执行系统的默认弹出动画
  */
@@ -94,13 +101,5 @@ typedef void (^JHAlertActionBlock)(NSInteger buttonIndex, UIAlertAction *action,
                     actionsBlock:(nullable JHAlertActionBlock)actionBlock;
 @end
 
- 
-@interface UIAlertController (Color)
 
-@property (nonatomic,strong) UIColor *titleColor; /**< 标题的颜色 */
-@property (nonatomic,strong) UIColor *messageColor; /**< 信息的颜色 */
-
-@property (nonatomic,strong) UIFont *titleFont; /**< 标题的字体 */
-@property (nonatomic,strong) UIFont *messageFont; /**< 信息的字体 */
-@end
 
