@@ -243,9 +243,9 @@ typedef void (^JHAlertActionsConfig)(JHAlertActionBlock actionBlock);
         //配置响应
         alertMaker.alertActionsConfig(actionBlock);
         
-        if (alertMaker.alertDidShown){
+        if (alertMaker.alertDidShow){
             [[self getCurrentVC] presentViewController:alertMaker animated:!(alertMaker.setAlertAnimated) completion:^{
-                alertMaker.alertDidShown();
+                alertMaker.alertDidShow();
             }];
         }else{
             [[self getCurrentVC] presentViewController:alertMaker animated:!(alertMaker.setAlertAnimated) completion:NULL];

@@ -57,7 +57,7 @@ typedef void (^JHAlertActionBlock)(NSInteger buttonIndex, UIAlertAction *action,
 /**
  JHAlertController: alert弹出后，可配置的回调
  */
-@property (nullable, nonatomic, copy) void (^alertDidShown)(void);
+@property (nullable, nonatomic, copy) void (^alertDidShow)(void);
 
 /**
  JHAlertController: alert关闭后，可配置的回调
