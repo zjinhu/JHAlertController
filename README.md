@@ -1,5 +1,6 @@
 # JHAlertController
 封装系统UIAlertController，一步搞定弹窗，参考JXTAlertController封装
+
 ##API
 ```objc
 + (void)showAlertWithTitle:(nullable NSString *)title
