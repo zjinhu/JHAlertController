@@ -23,13 +23,11 @@
             alertMaker.titleColor = [UIColor purpleColor];
             alertMaker.messageColor = [UIColor cyanColor];
             
-            alertMaker.titleFont= [UIFont boldSystemFontOfSize:30];
-            alertMaker.messageFont = [UIFont systemFontOfSize:5];
-            
-            alertMaker.addAttributedAction(@"333",[UIColor greenColor]);
-            alertMaker.addDestructiveAction(@"444");
-            alertMaker.addCancelAction(@"555");
-            alertMaker.addDefaultAction(@"666");
+            alertMaker.titleFont= [UIFont systemFontOfSize:17];
+            alertMaker.messageFont = [UIFont systemFontOfSize:15];
+       
+            alertMaker.addAttributedAction(@"取消",UIColor.blackColor);
+            alertMaker.addDefaultAction(@"确认");
             
             [alertMaker addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
                 textField.placeholder = @"输入框-请输入";
